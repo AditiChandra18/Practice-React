@@ -1,0 +1,4 @@
+3
+47D:\Practice React\List_from_objects\index1.html133298583566963325 0
+42D:\Practice React\List_from_objects\App.js133298583664635213 0
+46D:\Practice React\List_from_objects\Display.js133298576360478913 0
