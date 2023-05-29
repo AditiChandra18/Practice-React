@@ -8,7 +8,7 @@ const ToggleProgram=()=>{
     function btnClicked(){
         if(toggle==="false") setToggle("true"); 
         else{
-            setToggle("false"); 
+            setToggle("true"); 
         }
     }
 

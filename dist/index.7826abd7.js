@@ -27347,7 +27347,7 @@ const ToggleProgram = ()=>{
     const [toggle, setToggle] = (0, _react.useState)("no status");
     function btnClicked() {
         if (toggle === "false") setToggle("true");
-        else setToggle("false");
+        else setToggle("true");
     }
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         children: [
