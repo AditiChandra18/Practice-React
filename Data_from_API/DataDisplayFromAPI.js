@@ -13,13 +13,32 @@ fetch("https://hplussport.com/api/products/")
    
     data.forEach(product => {
 
-        const Title= product.name;
+        
         const Year= product.price;
+
+        if(Year>10.00){
+            const Title= product.name;
+
+            const listItem = document.createElement('li');
+            const image1=document.createElement('img');
+            image1.setAttribute('src',product.image);
+
+            listItem.textContent= ` Name = ${Title}
+            Price = ${Year}
+            `
+            listItem.append(image1);
+               
+
+       
+        
+        
+        output.appendChild(listItem);
+        
+
+        }
        // const Cast= product.image;
 
-        const listItem = document.createElement('li');
-        const image1=document.createElement('img');
-        image1.setAttribute('src',product.image);
+      
 
     //     // Set the text content of the list item to the product name
     //     listItem.textContent = product.name;
@@ -28,16 +47,7 @@ fetch("https://hplussport.com/api/products/")
     //    output.appendChild(listItem);
 
 
-        
-
-        listItem.textContent= ` Name = ${Title}
-        Price = ${Year}
-        `
-        listItem.append(image1);
-        
-        
-        output.appendChild(listItem);
-        
+     
     });
 }
 )
